@@ -1,0 +1,10 @@
+# Firebase
+firebase-debug.log
+.firebase/
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
