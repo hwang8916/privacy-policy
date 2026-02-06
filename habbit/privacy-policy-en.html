@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tok Tok: Habit & Hatch Privacy Policy. Information about data collection, usage, and retention policies for the habit tracking and tamagotchi-style game app.">
+    <title>Privacy Policy - Tok Tok: Habit & Hatch</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: #333333;
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #79c2a6 0%, #5ba589 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header .last-updated {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .language-btn {
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .language-btn:hover {
+            background: rgba(255, 255, 255, 0.5);
+            border-color: white;
+        }
+
+        .language-btn.active {
+            background: rgba(255, 255, 255, 0.9);
+            color: #5ba589;
+            border-color: white;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .table-of-contents {
+            background: #f5f5f5;
+            border-left: 4px solid #79c2a6;
+            padding: 20px;
+            margin: 40px 0;
+            border-radius: 4px;
+        }
+
+        .table-of-contents h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333333;
+        }
+
+        .table-of-contents ol {
+            list-style-position: inside;
+            line-height: 1.8;
+        }
+
+        .table-of-contents a {
+            color: #2196F3;
+            text-decoration: none;
+        }
+
+        .table-of-contents a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin: 40px 0;
+            padding: 0 0 20px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin: 30px 0 15px 0;
+            color: #333333;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin: 20px 0 10px 0;
+            color: #555555;
+            font-weight: 600;
+        }
+
+        p {
+            margin: 10px 0;
+            line-height: 1.8;
+        }
+
+        ul, ol {
+            margin: 15px 0 15px 20px;
+            line-height: 1.8;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        strong {
+            color: #333333;
+            font-weight: 600;
+        }
+
+        .highlight {
+            background-color: #e8f5e9;
+            border-left: 3px solid #79c2a6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
+        .service-item {
+            background: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
+        .service-item h4 {
+            color: #79c2a6;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        a {
+            color: #2196F3;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            background: #e3f2fd;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        footer {
+            background: #f5f5f5;
+            padding: 30px 20px;
+            text-align: center;
+            color: #666666;
+            margin-top: 50px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        footer p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #79c2a6;
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            header {
+                padding: 30px 15px;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            .language-selector {
+                position: static;
+                justify-content: center;
+                margin-top: 15px;
+                flex-wrap: wrap;
+            }
+
+            main {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            .table-of-contents {
+                padding: 15px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            main {
+                padding: 40px;
+            }
+
+            header {
+                padding: 50px 40px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+        }
+
+        /* Accessibility Improvements */
+        a:focus {
+            outline: 2px solid #79c2a6;
+            outline-offset: 2px;
+        }
+
+        button:focus {
+            outline: 2px solid #79c2a6;
+            outline-offset: 2px;
+        }
+
+        h1, h2, h3, h4 {
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="language-selector">
+            <a href="privacy-policy.html" class="language-btn">🇰🇷 한국어</a>
+            <a href="privacy-policy-en.html" class="language-btn active">🇺🇸 English</a>
+            <a href="privacy-policy-ja.html" class="language-btn">🇯🇵 日本語</a>
+        </div>
+        <h1>Tok Tok: Habit & Hatch</h1>
+        <p>Privacy Policy</p>
+        <div class="last-updated">Last Updated: February 6, 2026</div>
+    </header>
+
+    <main>
+        <section class="table-of-contents">
+            <h2>Table of Contents</h2>
+            <ol>
+                <li><a href="#section-1">Preamble</a></li>
+                <li><a href="#section-2">Personal Information Items Collected</a></li>
+                <li><a href="#section-3">Information Collection Methods</a></li>
+                <li><a href="#section-4">Purpose of Information Use</a></li>
+                <li><a href="#section-5">Third-Party Services (Firebase)</a></li>
+                <li><a href="#section-6">Data Retention and Deletion</a></li>
+                <li><a href="#section-7">Data Security</a></li>
+                <li><a href="#section-8">Children's Personal Information Protection</a></li>
+                <li><a href="#section-9">User Rights</a></li>
+                <li><a href="#section-10">Policy Changes</a></li>
+                <li><a href="#section-11">Contact Information</a></li>
+            </ol>
+        </section>
+
+        <section id="section-1">
+            <h2>1. Preamble</h2>
+            <p>Hello, this is the <strong>Tok Tok: Habit & Hatch team</strong>. This Privacy Policy describes how we collect, use, and manage personal information through our mobile application '<strong>Tok Tok: Habit & Hatch</strong>' (hereafter "the App").</p>
+            <p>This app is a gamified habit tracker where users track daily habits and grow a digital tamagotchi character upon completion. It also provides a Pomodoro timer and focus features.</p>
+            <div class="highlight">
+                <p><strong>App Information:</strong></p>
+                <ul>
+                    <li>App Name: Tok Tok: Habit & Hatch</li>
+                    <li>Package Name: com.toktok.habbit</li>
+                    <li>Version: 1.0.0+1</li>
+                    <li>Developer: Tok Tok: Habit & Hatch team</li>
+                    <li>Contact: hwang8916@gmail.com</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="section-2">
+            <h2>2. Personal Information Items Collected</h2>
+            <p>Our app collects the following personal information:</p>
+
+            <h3>2.1 Information Directly Provided by Users</h3>
+            <ul>
+                <li><strong>Account Information:</strong> Email address (email signup), Google account information (Google login)</li>
+                <li><strong>User-Generated Data:</strong>
+                    <ul>
+                        <li>Habit Information: Habit title, icon, color, description</li>
+                        <li>Habit Completion Records: Completion date, time, streak status</li>
+                        <li>Timer Settings: Work time, break time, number of sessions</li>
+                        <li>Tamagotchi/Character Data: Character name, evolution stage, collected stickers</li>
+                    </ul>
+                </li>
+                <li><strong>App Settings:</strong> Theme, language, notification preferences, and other user-customized settings</li>
+            </ul>
+
+            <h3>2.2 Automatically Collected Information</h3>
+            <ul>
+                <li><strong>Device Information:</strong>
+                    <ul>
+                        <li>Firebase Cloud Messaging (FCM) token</li>
+                        <li>Device OS and version (Android)</li>
+                        <li>App version</li>
+                    </ul>
+                </li>
+                <li><strong>Usage Analytics Data:</strong>
+                    <ul>
+                        <li>User ID (Firebase UID)</li>
+                        <li>Login method (email, Google)</li>
+                        <li>App usage events (screen visits, feature usage)</li>
+                        <li>Statistical data (number of habits, collections, completion rate)</li>
+                    </ul>
+                </li>
+                <li><strong>Error and Performance Data:</strong>
+                    <ul>
+                        <li>App crash information (Firebase Crashlytics)</li>
+                        <li>Error logs and stack traces</li>
+                        <li>Performance metrics</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>2.3 Information Collected Through Permissions</h3>
+            <p>The app requests the following Android permissions to function properly:</p>
+            <ul>
+                <li><strong>POST_NOTIFICATIONS:</strong> Send daily habit reminders and timer notifications</li>
+                <li><strong>SCHEDULE_EXACT_ALARM:</strong> Send notifications at precise times</li>
+                <li><strong>RECEIVE_BOOT_COMPLETED:</strong> Restore notifications after device reboot</li>
+                <li><strong>VIBRATE:</strong> Vibration feedback for notifications</li>
+            </ul>
+        </section>
+
+        <section id="section-3">
+            <h2>3. Information Collection Methods</h2>
+            <ul>
+                <li><strong>Direct Input:</strong> User registration, login, habit creation and editing, etc.</li>
+                <li><strong>Automatic Collection:</strong> Automatic data collection via Firebase SDK</li>
+                <li><strong>Permission Grant:</strong> Collection through permissions granted to the app (notifications, alarms, vibration)</li>
+                <li><strong>Third-Party Services:</strong> Google Firebase and Google Sign-In services</li>
+            </ul>
+        </section>
+
+        <section id="section-4">
+            <h2>4. Purpose of Information Use</h2>
+            <p>We use collected personal information only for the following purposes:</p>
+            <ul>
+                <li><strong>Service Provision:</strong> Provide core app features (habit tracking, tamagotchi game, timer)</li>
+                <li><strong>Account Management:</strong> Login, user registration, account security</li>
+                <li><strong>Data Synchronization:</strong> Data synchronization across multiple devices (using Cloud Firestore)</li>
+                <li><strong>Push Notifications:</strong> Daily habit reminders and timer notifications (Firebase Cloud Messaging)</li>
+                <li><strong>App Improvement and Analytics:</strong> Usage pattern analysis and feature improvement (Firebase Analytics)</li>
+                <li><strong>Error Diagnosis and Fixing:</strong> App crash and bug analysis (Firebase Crashlytics)</li>
+                <li><strong>Legal Compliance:</strong> Legal compliance and dispute resolution</li>
+            </ul>
+        </section>
+
+        <section id="section-5">
+            <h2>5. Third-Party Services (Firebase)</h2>
+            <p>Our app shares user data with the following Google Firebase services for better service provision:</p>
+
+            <div class="service-item">
+                <h4>🔐 Firebase Authentication</h4>
+                <p><strong>Purpose:</strong> Secure login and account management</p>
+                <p><strong>Data Collected:</strong> Email address, Google account information, user UID</p>
+                <p><strong>Retention Period:</strong> Until account deletion</p>
+                <p><strong>Policy Links:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a> | <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></p>
+            </div>
+
+            <div class="service-item">
+                <h4>💾 Cloud Firestore (Database)</h4>
+                <p><strong>Purpose:</strong> Store and synchronize user habits, tamagotchi, and settings data</p>
+                <p><strong>Data Collected:</strong></p>
+                <ul>
+                    <li>Habit information and completion records</li>
+                    <li>Tamagotchi character data</li>
+                    <li>Timer settings</li>
+                    <li>App settings</li>
+                </ul>
+                <p><strong>Retention Period:</strong> Until account deletion</p>
+                <p><strong>Policy Link:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></p>
+            </div>
+
+            <div class="service-item">
+                <h4>📢 Firebase Cloud Messaging (FCM)</h4>
+                <p><strong>Purpose:</strong> Send push notifications (daily habit reminders, timer notifications)</p>
+                <p><strong>Data Collected:</strong> FCM token, device information</p>
+                <p><strong>Retention Period:</strong> Until app uninstallation</p>
+                <p><strong>Policy Link:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></p>
+            </div>
+
+            <div class="service-item">
+                <h4>📊 Firebase Analytics</h4>
+                <p><strong>Purpose:</strong> Analyze app usage patterns and improve features</p>
+                <p><strong>Data Collected:</strong></p>
+                <ul>
+                    <li>User ID</li>
+                    <li>Login method</li>
+                    <li>Screen visit events</li>
+                    <li>Feature usage statistics</li>
+                    <li>Statistics such as number of habits, collections, etc.</li>
+                </ul>
+                <p><strong>Retention Period:</strong> Typically 14 months (subject to Google's policy)</p>
+                <p><strong>Policy Links:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a> | <a href="https://policies.google.com/technologies/analytics" target="_blank">Google Analytics for Firebase</a></p>
+            </div>
+
+            <div class="service-item">
+                <h4>🐛 Firebase Crashlytics (Error Analysis)</h4>
+                <p><strong>Purpose:</strong> Analyze app crashes and errors to improve stability</p>
+                <p><strong>Data Collected:</strong></p>
+                <ul>
+                    <li>App crash information</li>
+                    <li>Error logs and stack traces</li>
+                    <li>Device information</li>
+                    <li>Performance metrics</li>
+                </ul>
+                <p><strong>Retention Period:</strong> Typically 90 days (subject to Google's policy)</p>
+                <p><strong>Policy Link:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></p>
+            </div>
+
+            <div class="service-item">
+                <h4>🔗 Google Sign-In</h4>
+                <p><strong>Purpose:</strong> Convenient login via Google account</p>
+                <p><strong>Data Collected:</strong> Google account information, profile information</p>
+                <p><strong>Retention Period:</strong> Until account deletion</p>
+                <p><strong>Policy Link:</strong> <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></p>
+            </div>
+
+            <div class="highlight">
+                <p><strong>⚠️ Important:</strong> Google Firebase is a US-based company. Therefore, user data is managed according to Google's data processing terms and may be subject to US law. Google's international data transfer policy can be found in the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</p>
+            </div>
+        </section>
+
+        <section id="section-6">
+            <h2>6. Data Retention and Deletion</h2>
+            <h3>6.1 Data Retention Period</h3>
+            <ul>
+                <li><strong>Active Account:</strong> Retained while user is using the app</li>
+                <li><strong>After Account Deletion:</strong>
+                    <ul>
+                        <li>Firebase Authentication: Deleted immediately</li>
+                        <li>Cloud Firestore: Deleted within 30 days of account deletion</li>
+                        <li>Firebase Analytics: Automatically deleted after 14 months</li>
+                        <li>Firebase Crashlytics: Automatically deleted after 90 days</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>6.2 Data Deletion Method</h3>
+            <p>Users can delete their account and data in the following ways:</p>
+            <div class="contact-info">
+                <p><strong>Account and Data Deletion Request:</strong></p>
+                <p>Please contact us via email with the following information:</p>
+                <ul>
+                    <li>Your email address</li>
+                    <li>Your username or UID registered in the app</li>
+                    <li>Subject: "Account and Data Deletion Request"</li>
+                </ul>
+                <p><strong>Email:</strong> hwang8916@gmail.com</p>
+                <p><strong>Response Time:</strong> Within 7 days of request receipt</p>
+            </div>
+
+            <h3>6.3 In-App Data Deletion</h3>
+            <p>Users can delete the following data anytime within the app:</p>
+            <ul>
+                <li>Habit data</li>
+                <li>Tamagotchi/character data</li>
+                <li>App settings</li>
+            </ul>
+        </section>
+
+        <section id="section-7">
+            <h2>7. Data Security</h2>
+            <p>We prioritize protecting your personal information and implement the following security measures:</p>
+            <ul>
+                <li><strong>HTTPS Encryption:</strong> All data transmission uses SSL/TLS encryption protocol.</li>
+                <li><strong>Firebase Security Rules:</strong> Cloud Firestore is protected by Firebase Security Rules, allowing users to access only their own data.</li>
+                <li><strong>Authentication-Based Access:</strong> All users access their data through login.</li>
+                <li><strong>Google's Security:</strong> Google Firebase uses Google's enterprise-grade security facilities.</li>
+                <li><strong>Data Encryption:</strong> Google Firestore encrypts data at rest.</li>
+            </ul>
+            <div class="highlight">
+                <p><strong>Note:</strong> No online service can guarantee 100% perfect security. Users should keep their account information (passwords, login credentials) safe.</p>
+            </div>
+        </section>
+
+        <section id="section-8">
+            <h2>8. Children's Personal Information Protection</h2>
+            <p>Our app is intended for users <strong>aged 13 and above</strong>.</p>
+            <p><strong>Policy for children under 13:</strong></p>
+            <ul>
+                <li>Children may only use the app with parental or legal guardian consent.</li>
+                <li>Parental/guardian consent is required for children's personal information collection.</li>
+                <li>Parents/guardians can request deletion of their children's data.</li>
+            </ul>
+            <div class="contact-info">
+                <p><strong>Children's Data Deletion Request:</strong></p>
+                <p>To delete your child's account and data, please contact us via email with the following information:</p>
+                <ul>
+                    <li>Parent/guardian name</li>
+                    <li>Child's name or user account</li>
+                    <li>Subject: "Children's Account Data Deletion Request"</li>
+                </ul>
+                <p><strong>Email:</strong> hwang8916@gmail.com</p>
+            </div>
+        </section>
+
+        <section id="section-9">
+            <h2>9. User Rights</h2>
+            <p>According to privacy laws, users have the following rights:</p>
+            <ul>
+                <li><strong>Right to Access:</strong> Request access to your personal information</li>
+                <li><strong>Right to Rectification:</strong> Request correction of incorrect information</li>
+                <li><strong>Right to Erasure:</strong> Request deletion of personal information</li>
+                <li><strong>Right to Restrict Processing:</strong> Request restriction of personal information processing</li>
+                <li><strong>Right to Withdraw Consent:</strong> Withdraw consent to personal information processing</li>
+                <li><strong>Right to Data Portability:</strong> Right to receive personal information in structured format</li>
+            </ul>
+            <div class="contact-info">
+                <p><strong>How to Exercise Rights:</strong></p>
+                <p>To exercise any of the above rights, please submit a request via email.</p>
+                <p><strong>Email:</strong> hwang8916@gmail.com</p>
+                <p><strong>Processing Time:</strong> Within 7 days of request receipt</p>
+            </div>
+        </section>
+
+        <section id="section-10">
+            <h2>10. Policy Changes</h2>
+            <p>We may change this Privacy Policy due to legal changes, service improvements, etc.</p>
+            <h3>10.1 Policy Change Process</h3>
+            <ul>
+                <li>Significant Changes: Notification within the app and email notice</li>
+                <li>Minor Changes: Notice on this page</li>
+                <li>The Last Updated date will be changed.</li>
+            </ul>
+            <h3>10.2 Change History</h3>
+            <ul>
+                <li><strong>February 6, 2026:</strong> Initial creation and publication of Privacy Policy</li>
+            </ul>
+        </section>
+
+        <section id="section-11">
+            <h2>11. Contact Information</h2>
+            <p>If you have any questions about this Privacy Policy or concerns about your personal information, please contact us:</p>
+            <div class="contact-info">
+                <p><strong>Developer:</strong> Tok Tok: Habit & Hatch team</p>
+                <p><strong>Email:</strong> hwang8916@gmail.com</p>
+                <p><strong>App Name:</strong> Tok Tok: Habit & Hatch</p>
+                <p><strong>Package:</strong> com.toktok.habbit</p>
+                <p><strong>Response Time:</strong> Within 7 days of email receipt</p>
+            </div>
+
+            <h3>Data Protection Officer</h3>
+            <p>For complaints or reports of harm regarding personal information processing:</p>
+            <ul>
+                <li>Email: hwang8916@gmail.com</li>
+                <li>Subject: "[Personal Information] Complaint"</li>
+            </ul>
+
+            <h3>11.1 Other Inquiries</h3>
+            <p>For app features, bug reports, and other inquiries:</p>
+            <ul>
+                <li>Email: hwang8916@gmail.com</li>
+                <li>Google Play Store Review: "Contact Developer" button on app page</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tok Tok: Habit & Hatch team. All rights reserved.</p>
+        <p>This Privacy Policy complies with international privacy standards.</p>
+        <p>Last Updated: February 6, 2026</p>
+    </footer>
+</body>
+</html>

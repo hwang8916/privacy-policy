@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tok Tok: Habit & Hatch プライバシーポリシー。習慣追跡およびたまごっち風ゲームアプリのデータ収集、使用、保持に関するポリシー。">
+    <title>プライバシーポリシー - Tok Tok: Habit & Hatch</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: #333333;
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #79c2a6 0%, #5ba589 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header .last-updated {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .language-btn {
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .language-btn:hover {
+            background: rgba(255, 255, 255, 0.5);
+            border-color: white;
+        }
+
+        .language-btn.active {
+            background: rgba(255, 255, 255, 0.9);
+            color: #5ba589;
+            border-color: white;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .table-of-contents {
+            background: #f5f5f5;
+            border-left: 4px solid #79c2a6;
+            padding: 20px;
+            margin: 40px 0;
+            border-radius: 4px;
+        }
+
+        .table-of-contents h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333333;
+        }
+
+        .table-of-contents ol {
+            list-style-position: inside;
+            line-height: 1.8;
+        }
+
+        .table-of-contents a {
+            color: #2196F3;
+            text-decoration: none;
+        }
+
+        .table-of-contents a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin: 40px 0;
+            padding: 0 0 20px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin: 30px 0 15px 0;
+            color: #333333;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin: 20px 0 10px 0;
+            color: #555555;
+            font-weight: 600;
+        }
+
+        p {
+            margin: 10px 0;
+            line-height: 1.8;
+        }
+
+        ul, ol {
+            margin: 15px 0 15px 20px;
+            line-height: 1.8;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        strong {
+            color: #333333;
+            font-weight: 600;
+        }
+
+        .highlight {
+            background-color: #e8f5e9;
+            border-left: 3px solid #79c2a6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
+        .service-item {
+            background: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
+        .service-item h4 {
+            color: #79c2a6;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        a {
+            color: #2196F3;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            background: #e3f2fd;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        footer {
+            background: #f5f5f5;
+            padding: 30px 20px;
+            text-align: center;
+            color: #666666;
+            margin-top: 50px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        footer p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #79c2a6;
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* レスポンシブデザイン */
+        @media (max-width: 767px) {
+            header {
+                padding: 30px 15px;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            .language-selector {
+                position: static;
+                justify-content: center;
+                margin-top: 15px;
+                flex-wrap: wrap;
+            }
+
+            main {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            .table-of-contents {
+                padding: 15px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            main {
+                padding: 40px;
+            }
+
+            header {
+                padding: 50px 40px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+        }
+
+        /* アクセシビリティ改善 */
+        a:focus {
+            outline: 2px solid #79c2a6;
+            outline-offset: 2px;
+        }
+
+        button:focus {
+            outline: 2px solid #79c2a6;
+            outline-offset: 2px;
+        }
+
+        h1, h2, h3, h4 {
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="language-selector">
+            <a href="privacy-policy.html" class="language-btn">🇰🇷 한국어</a>
+            <a href="privacy-policy-en.html" class="language-btn">🇺🇸 English</a>
+            <a href="privacy-policy-ja.html" class="language-btn active">🇯🇵 日本語</a>
+        </div>
+        <h1>Tok Tok: Habit & Hatch</h1>
+        <p>プライバシーポリシー</p>
+        <div class="last-updated">最終更新日: 2026年2月6日</div>
+    </header>
+
+    <main>
+        <section class="table-of-contents">
+            <h2>目次</h2>
+            <ol>
+                <li><a href="#section-1">前文</a></li>
+                <li><a href="#section-2">収集される個人情報</a></li>
+                <li><a href="#section-3">情報収集方法</a></li>
+                <li><a href="#section-4">情報の利用目的</a></li>
+                <li><a href="#section-5">第三者サービス (Firebase)</a></li>
+                <li><a href="#section-6">データ保管と削除</a></li>
+                <li><a href="#section-7">データセキュリティ</a></li>
+                <li><a href="#section-8">児童の個人情報保護</a></li>
+                <li><a href="#section-9">ユーザーの権利</a></li>
+                <li><a href="#section-10">ポリシー変更</a></li>
+                <li><a href="#section-11">お問い合わせ</a></li>
+            </ol>
+        </section>
+
+        <section id="section-1">
+            <h2>1. 前文</h2>
+            <p>こんにちは。<strong>Tok Tok: Habit & Hatch チーム</strong>です。本プライバシーポリシーは、当チームが提供するモバイルアプリケーション「<strong>Tok Tok: Habit & Hatch</strong>」(以下「本アプリ」)を通じて収集、使用、および管理される個人情報に関する内容を説明しています。</p>
+            <p>本アプリは、ユーザーが日々の習慣を追跡し、完了することでデジタルたまごっちキャラクターを成長させるゲーミフィケーション習慣トラッカーです。さらに、ポモドーロタイマーと集中機能を提供しています。</p>
+            <div class="highlight">
+                <p><strong>アプリ情報:</strong></p>
+                <ul>
+                    <li>アプリ名: Tok Tok: Habit & Hatch</li>
+                    <li>パッケージ名: com.toktok.habbit</li>
+                    <li>バージョン: 1.0.0+1</li>
+                    <li>開発者: Tok Tok: Habit & Hatch チーム</li>
+                    <li>お問い合わせ: hwang8916@gmail.com</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="section-2">
+            <h2>2. 収集される個人情報</h2>
+            <p>本アプリは以下の個人情報を収集します:</p>
+
+            <h3>2.1 ユーザーが直接提供する情報</h3>
+            <ul>
+                <li><strong>アカウント情報:</strong> メールアドレス (メール登録)、Google アカウント情報 (Google ログイン)</li>
+                <li><strong>ユーザー生成データ:</strong>
+                    <ul>
+                        <li>習慣情報: 習慣タイトル、アイコン、色、説明</li>
+                        <li>習慣完了記録: 完了日時、時刻、連続達成ステータス</li>
+                        <li>タイマー設定: 作業時間、休憩時間、セッション数</li>
+                        <li>たまごっち/キャラクターデータ: キャラクター名、進化段階、収集したシール</li>
+                    </ul>
+                </li>
+                <li><strong>アプリ設定:</strong> テーマ、言語、通知設定、その他のユーザーカスタマイズ設定</li>
+            </ul>
+
+            <h3>2.2 自動的に収集される情報</h3>
+            <ul>
+                <li><strong>デバイス情報:</strong>
+                    <ul>
+                        <li>Firebase Cloud Messaging (FCM) トークン</li>
+                        <li>デバイス OS およびバージョン (Android)</li>
+                        <li>アプリバージョン</li>
+                    </ul>
+                </li>
+                <li><strong>使用分析データ:</strong>
+                    <ul>
+                        <li>ユーザー ID (Firebase UID)</li>
+                        <li>ログイン方法 (メール、Google)</li>
+                        <li>アプリ使用イベント (画面訪問、機能使用)</li>
+                        <li>統計データ (習慣数、コレクション数、完了率)</li>
+                    </ul>
+                </li>
+                <li><strong>エラーおよびパフォーマンスデータ:</strong>
+                    <ul>
+                        <li>アプリクラッシュ情報 (Firebase Crashlytics)</li>
+                        <li>エラーログおよびスタックトレース</li>
+                        <li>パフォーマンスメトリクス</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>2.3 許可を通じて収集される情報</h3>
+            <p>本アプリが正常に機能するために以下の Android 権限をリクエストします:</p>
+            <ul>
+                <li><strong>POST_NOTIFICATIONS:</strong> 日々の習慣リマインダーとタイマー通知の送信</li>
+                <li><strong>SCHEDULE_EXACT_ALARM:</strong> 正確な時刻に通知を送信</li>
+                <li><strong>RECEIVE_BOOT_COMPLETED:</strong> デバイス再起動後の通知復元</li>
+                <li><strong>VIBRATE:</strong> 通知時の振動フィードバック</li>
+            </ul>
+        </section>
+
+        <section id="section-3">
+            <h2>3. 情報収集方法</h2>
+            <ul>
+                <li><strong>直接入力:</strong> ユーザー登録、ログイン、習慣作成・編集など</li>
+                <li><strong>自動収集:</strong> Firebase SDK を通じた自動データ収集</li>
+                <li><strong>許可付与:</strong> アプリに付与された許可を通じた収集 (通知、アラーム、振動)</li>
+                <li><strong>第三者サービス:</strong> Google Firebase および Google Sign-In サービス</li>
+            </ul>
+        </section>
+
+        <section id="section-4">
+            <h2>4. 情報の利用目的</h2>
+            <p>当チームは収集した個人情報を以下の目的のみで使用します:</p>
+            <ul>
+                <li><strong>サービス提供:</strong> アプリの中核機能提供 (習慣追跡、たまごっちゲーム、タイマー)</li>
+                <li><strong>アカウント管理:</strong> ログイン、ユーザー登録、アカウントセキュリティ</li>
+                <li><strong>データ同期:</strong> 複数デバイス間でのデータ同期 (Cloud Firestore 使用)</li>
+                <li><strong>プッシュ通知:</strong> 日々の習慣リマインダーとタイマー通知 (Firebase Cloud Messaging)</li>
+                <li><strong>アプリ改善と分析:</strong> 使用パターン分析、機能改善 (Firebase Analytics)</li>
+                <li><strong>エラー診断と修正:</strong> アプリクラッシュとバグ分析 (Firebase Crashlytics)</li>
+                <li><strong>法的義務の遵守:</strong> 法律遵守と紛争解決</li>
+            </ul>
+        </section>
+
+        <section id="section-5">
+            <h2>5. 第三者サービス (Firebase)</h2>
+            <p>本アプリはより良いサービス提供のため、以下の Google Firebase サービスとユーザーデータを共有します:</p>
+
+            <div class="service-item">
+                <h4>🔐 Firebase Authentication</h4>
+                <p><strong>目的:</strong> 安全なログインとアカウント管理</p>
+                <p><strong>収集データ:</strong> メールアドレス、Google アカウント情報、ユーザー UID</p>
+                <p><strong>保管期間:</strong> アカウント削除時まで</p>
+                <p><strong>ポリシーリンク:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase プライバシーポリシー</a> | <a href="https://policies.google.com/privacy" target="_blank">Google プライバシーポリシー</a></p>
+            </div>
+
+            <div class="service-item">
+                <h4>💾 Cloud Firestore (データベース)</h4>
+                <p><strong>目的:</strong> ユーザー習慣、たまごっち、設定データの保存と同期</p>
+                <p><strong>収集データ:</strong></p>
+                <ul>
+                    <li>習慣情報と完了記録</li>
+                    <li>たまごっちキャラクターデータ</li>
+                    <li>タイマー設定</li>
+                    <li>アプリ設定</li>
+                </ul>
+                <p><strong>保管期間:</strong> アカウント削除時まで</p>
+                <p><strong>ポリシーリンク:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase プライバシーポリシー</a></p>
+            </div>
+
+            <div class="service-item">
+                <h4>📢 Firebase Cloud Messaging (FCM)</h4>
+                <p><strong>目的:</strong> プッシュ通知送信 (日々の習慣リマインダー、タイマー通知)</p>
+                <p><strong>収集データ:</strong> FCM トークン、デバイス情報</p>
+                <p><strong>保管期間:</strong> アプリアンインストール時まで</p>
+                <p><strong>ポリシーリンク:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase プライバシーポリシー</a></p>
+            </div>
+
+            <div class="service-item">
+                <h4>📊 Firebase Analytics</h4>
+                <p><strong>目的:</strong> アプリ使用パターンの分析と機能改善</p>
+                <p><strong>収集データ:</strong></p>
+                <ul>
+                    <li>ユーザー ID</li>
+                    <li>ログイン方法</li>
+                    <li>画面訪問イベント</li>
+                    <li>機能使用統計</li>
+                    <li>習慣数、コレクション数などの統計</li>
+                </ul>
+                <p><strong>保管期間:</strong> 通常 14 ヶ月 (Google のポリシーに従う)</p>
+                <p><strong>ポリシーリンク:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase プライバシーポリシー</a> | <a href="https://policies.google.com/technologies/analytics" target="_blank">Firebase Analytics</a></p>
+            </div>
+
+            <div class="service-item">
+                <h4>🐛 Firebase Crashlytics (エラー分析)</h4>
+                <p><strong>目的:</strong> アプリクラッシュとエラー分析による安定性改善</p>
+                <p><strong>収集データ:</strong></p>
+                <ul>
+                    <li>アプリクラッシュ情報</li>
+                    <li>エラーログおよびスタックトレース</li>
+                    <li>デバイス情報</li>
+                    <li>パフォーマンスメトリクス</li>
+                </ul>
+                <p><strong>保管期間:</strong> 通常 90 日 (Google のポリシーに従う)</p>
+                <p><strong>ポリシーリンク:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase プライバシーポリシー</a></p>
+            </div>
+
+            <div class="service-item">
+                <h4>🔗 Google Sign-In</h4>
+                <p><strong>目的:</strong> Google アカウントを通じた便利なログイン</p>
+                <p><strong>収集データ:</strong> Google アカウント情報、プロフィール情報</p>
+                <p><strong>保管期間:</strong> アカウント削除時まで</p>
+                <p><strong>ポリシーリンク:</strong> <a href="https://policies.google.com/privacy" target="_blank">Google プライバシーポリシー</a></p>
+            </div>
+
+            <div class="highlight">
+                <p><strong>⚠️ 重要:</strong> Google Firebase は米国を拠点とする企業です。したがって、ユーザーデータは Google のデータ処理約款に従って管理され、米国法の対象となる可能性があります。Google の国際データ転送ポリシーは <a href="https://policies.google.com/privacy" target="_blank">Google プライバシーポリシー</a>で確認できます。</p>
+            </div>
+        </section>
+
+        <section id="section-6">
+            <h2>6. データ保管と削除</h2>
+            <h3>6.1 データ保管期間</h3>
+            <ul>
+                <li><strong>アクティブなアカウント:</strong> ユーザーがアプリを使用している間、保管され続ける</li>
+                <li><strong>アカウント削除後:</strong>
+                    <ul>
+                        <li>Firebase Authentication: 即座に削除</li>
+                        <li>Cloud Firestore: アカウント削除後 30 日以内に削除</li>
+                        <li>Firebase Analytics: 14 ヶ月後に自動削除</li>
+                        <li>Firebase Crashlytics: 90 日後に自動削除</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>6.2 データ削除方法</h3>
+            <p>ユーザーは以下の方法でアカウントとデータを削除できます:</p>
+            <div class="contact-info">
+                <p><strong>アカウントとデータ削除要求:</strong></p>
+                <p>以下の情報を含めてメールで当チームにご連絡ください:</p>
+                <ul>
+                    <li>ご本人のメールアドレス</li>
+                    <li>アプリに登録されたユーザー名または UID</li>
+                    <li>件名: 「アカウントとデータ削除要求」</li>
+                </ul>
+                <p><strong>メール:</strong> hwang8916@gmail.com</p>
+                <p><strong>対応時間:</strong> 要求受け取り後 7 日以内</p>
+            </div>
+
+            <h3>6.3 アプリ内データ削除</h3>
+            <p>ユーザーはいつでもアプリ内から以下のデータを削除できます:</p>
+            <ul>
+                <li>習慣データ</li>
+                <li>たまごっち/キャラクターデータ</li>
+                <li>アプリ設定</li>
+            </ul>
+        </section>
+
+        <section id="section-7">
+            <h2>7. データセキュリティ</h2>
+            <p>当チームはユーザーの個人情報保護を最優先と考え、以下のセキュリティ対策を実施しています:</p>
+            <ul>
+                <li><strong>HTTPS 暗号化:</strong> すべてのデータ転送は SSL/TLS 暗号化プロトコルを使用します。</li>
+                <li><strong>Firebase セキュリティルール:</strong> Cloud Firestore は Firebase セキュリティルールで保護され、ユーザーは自身のデータのみにアクセスできます。</li>
+                <li><strong>認証ベースのアクセス:</strong> すべてのユーザーはログインを通じてデータにアクセスします。</li>
+                <li><strong>Google のセキュリティ:</strong> Google Firebase は Google のエンタープライズグレードセキュリティ施設を使用します。</li>
+                <li><strong>データ暗号化:</strong> Google Firestore は保管時にデータを暗号化します。</li>
+            </ul>
+            <div class="highlight">
+                <p><strong>注意:</strong> オンラインサービスは 100% の完璧なセキュリティを保証できません。ユーザーはアカウント情報 (パスワード、ログイン認証) を安全に管理してください。</p>
+            </div>
+        </section>
+
+        <section id="section-8">
+            <h2>8. 児童の個人情報保護</h2>
+            <p>本アプリは<strong>13 歳以上のユーザー</strong>を対象としています。</p>
+            <p><strong>13 歳未満の児童ユーザーに関するポリシー:</strong></p>
+            <ul>
+                <li>児童は保護者または法定後見人の同意の下でのみ本アプリを使用できます。</li>
+                <li>児童の個人情報収集同意には保護者/後見人の同意が必須です。</li>
+                <li>保護者/後見人は子どものデータ削除を要求できます。</li>
+            </ul>
+            <div class="contact-info">
+                <p><strong>児童データ削除要求:</strong></p>
+                <p>お子さんのアカウントとデータを削除するには、以下の情報を含めてメールでご要求ください:</p>
+                <ul>
+                    <li>保護者/後見人のお名前</li>
+                    <li>お子さんのお名前またはユーザーアカウント</li>
+                    <li>件名: 「児童アカウントデータ削除要求」</li>
+                </ul>
+                <p><strong>メール:</strong> hwang8916@gmail.com</p>
+            </div>
+        </section>
+
+        <section id="section-9">
+            <h2>9. ユーザーの権利</h2>
+            <p>プライバシー法に従い、ユーザーは以下の権利を有します:</p>
+            <ul>
+                <li><strong>アクセス権:</strong> 個人情報へのアクセスを要求する権利</li>
+                <li><strong>訂正権:</strong> 誤った情報の修正を要求する権利</li>
+                <li><strong>削除権:</strong> 個人情報削除を要求する権利</li>
+                <li><strong>処理制限権:</strong> 個人情報処理の制限を要求する権利</li>
+                <li><strong>同意撤回権:</strong> 個人情報処理同意を撤回する権利</li>
+                <li><strong>データポータビリティ権:</strong> 構造化形式で個人情報を受け取る権利</li>
+            </ul>
+            <div class="contact-info">
+                <p><strong>権利の行使方法:</strong></p>
+                <p>上記の権利を行使するには、メールで要求してください。</p>
+                <p><strong>メール:</strong> hwang8916@gmail.com</p>
+                <p><strong>対応時間:</strong> 要求受け取り後 7 日以内</p>
+            </div>
+        </section>
+
+        <section id="section-10">
+            <h2>10. ポリシー変更</h2>
+            <p>当チームは法律の変更、サービスの改善などの理由により本プライバシーポリシーを変更することがあります。</p>
+            <h3>10.1 ポリシー変更手続き</h3>
+            <ul>
+                <li>重大な変更: アプリ内通知およびメール通知</li>
+                <li>軽微な変更: このページでの通知</li>
+                <li>最終更新日が変更されます。</li>
+            </ul>
+            <h3>10.2 変更履歴</h3>
+            <ul>
+                <li><strong>2026 年 2 月 6 日:</strong> プライバシーポリシーの初期作成および公開</li>
+            </ul>
+        </section>
+
+        <section id="section-11">
+            <h2>11. お問い合わせ</h2>
+            <p>本プライバシーポリシーについてご質問がある場合、または個人情報に関する問題がある場合は、以下にお問い合わせください:</p>
+            <div class="contact-info">
+                <p><strong>開発者:</strong> Tok Tok: Habit & Hatch チーム</p>
+                <p><strong>メール:</strong> hwang8916@gmail.com</p>
+                <p><strong>アプリ名:</strong> Tok Tok: Habit & Hatch</p>
+                <p><strong>パッケージ:</strong> com.toktok.habbit</p>
+                <p><strong>対応時間:</strong> メール受け取り後 7 日以内</p>
+            </div>
+
+            <h3>個人データ保護責任者</h3>
+            <p>個人情報処理に関する苦情または被害報告:</p>
+            <ul>
+                <li>メール: hwang8916@gmail.com</li>
+                <li>件名: 「[個人情報] 苦情申し立て」</li>
+            </ul>
+
+            <h3>11.1 その他のお問い合わせ</h3>
+            <p>アプリ機能、バグ報告、その他のお問い合わせ:</p>
+            <ul>
+                <li>メール: hwang8916@gmail.com</li>
+                <li>Google Play Store レビュー: アプリページの「開発者に連絡」ボタン</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tok Tok: Habit & Hatch チーム. All rights reserved.</p>
+        <p>本プライバシーポリシーは国際的なプライバシー基準に準拠しています。</p>
+        <p>最終更新日: 2026 年 2 月 6 日</p>
+    </footer>
+</body>
+</html>
