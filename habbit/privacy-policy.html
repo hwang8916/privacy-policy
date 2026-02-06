@@ -24,6 +24,7 @@
             color: white;
             padding: 40px 20px;
             text-align: center;
+            position: relative;
         }
 
         header h1 {
@@ -35,6 +36,39 @@
         header .last-updated {
             font-size: 14px;
             opacity: 0.9;
+        }
+
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .language-btn {
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .language-btn:hover {
+            background: rgba(255, 255, 255, 0.5);
+            border-color: white;
+        }
+
+        .language-btn.active {
+            background: rgba(255, 255, 255, 0.9);
+            color: #5ba589;
+            border-color: white;
         }
 
         main {
@@ -204,6 +238,13 @@
                 font-size: 24px;
             }
 
+            .language-selector {
+                position: static;
+                justify-content: center;
+                margin-top: 15px;
+                flex-wrap: wrap;
+            }
+
             main {
                 padding: 15px;
             }
@@ -261,6 +302,11 @@
 </head>
 <body>
     <header>
+        <div class="language-selector">
+            <a href="privacy-policy.html" class="language-btn active">🇰🇷 한국어</a>
+            <a href="privacy-policy-en.html" class="language-btn">🇺🇸 English</a>
+            <a href="privacy-policy-ja.html" class="language-btn">🇯🇵 日本語</a>
+        </div>
         <h1>톡톡: 습관 & 키우기</h1>
         <p>개인정보 처리방침</p>
         <div class="last-updated">최종 업데이트: 2026년 2월 6일</div>
