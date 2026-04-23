@@ -1,9 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-  <meta http-equiv="refresh" content="0; url=privacy-policy.html">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>톡톡 문서 센터</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(160deg, #eef9f3 0%, #f4fbf7 45%, #fbfefc 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      color: #1e2c26;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 760px;
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid #dbe9e1;
+      border-radius: 24px;
+      padding: 36px;
+      box-shadow: 0 22px 50px rgba(91, 165, 137, 0.12);
+      backdrop-filter: blur(12px);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ecf8f1;
+      color: #4b957a;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: 34px;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      color: #61756d;
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+
+    .docs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .doc-card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      padding: 24px 22px;
+      border-radius: 18px;
+      border: 1px solid #dce9e1;
+      background: linear-gradient(180deg, #ffffff 0%, #f7fcf9 100%);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .doc-card:hover {
+      transform: translateY(-3px);
+      border-color: #7cc1a5;
+      box-shadow: 0 14px 28px rgba(91, 165, 137, 0.12);
+    }
+
+    .doc-icon {
+      font-size: 28px;
+      margin-bottom: 14px;
+    }
+
+    .doc-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .doc-desc {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #687c74;
+    }
+
+    .home-link {
+      display: inline-block;
+      margin-top: 26px;
+      color: #4b957a;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-  <p>Redirecting to <a href="privacy-policy.html">Privacy Policy</a>...</p>
+  <div class="container">
+    <div class="eyebrow">Tok Tok Documents</div>
+    <h1>톡톡 문서 센터</h1>
+    <p class="subtitle">톡톡의 실제 서비스 구성에 맞춘 정책 문서입니다. 습관, 할 일, 메모, 스피치, 집중 타이머, 알림 및 계정 동기화 기능에 대한 개인정보 처리방침과 이용약관을 한국어, 영어, 일본어로 제공합니다.</p>
+
+    <div class="docs">
+      <a class="doc-card" href="privacy-policy.html">
+        <div class="doc-icon">🔒</div>
+        <div class="doc-title">개인정보 처리방침</div>
+        <div class="doc-desc">계정 정보, 사용자 작성 데이터, 알림, Firebase 기반 동기화와 분석·오류 진단 처리 기준을 확인합니다.</div>
+      </a>
+
+      <a class="doc-card" href="terms-of-service.html">
+        <div class="doc-icon">📘</div>
+        <div class="doc-title">이용약관</div>
+        <div class="doc-desc">서비스 이용 조건, 계정 책임, 데이터 이용, 금지행위, 책임 제한과 문의처를 확인합니다.</div>
+      </a>
+    </div>
+
+    <a class="home-link" href="../index.html">메인으로 돌아가기</a>
+  </div>
 </body>
 </html>

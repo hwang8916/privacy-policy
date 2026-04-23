@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "privacy-policy-sjjang-2026"
+  },
+  "targets": {
+    "privacy-policy-sjjang-2026": {
+      "hosting": {
+        "site": [
+          "privacy-policy-marui"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
