@@ -80,9 +80,10 @@
         </table>
         <p>Google ログインの過程でメールアドレスや表示名が渡される場合がありますが、本アプリはこれらを保存せず直ちに破棄します。</p>
 
-        <h3>1.2 広告関連の自動収集情報</h3>
+        <h3>1.2 広告・分析関連の自動収集情報</h3>
         <ul>
             <li><strong>広告識別子および端末情報:</strong> 広告配信のため、Google AdMob SDK が広告識別子(AAID)と端末情報を収集・利用します。パーソナライズ広告への同意有無に応じて、パーソナライズ広告または非パーソナライズ広告が配信されます。</li>
+            <li><strong>利用統計(匿名分析):</strong> サービス改善のため、ステージ進行・クリア/失敗、機能の利用、通貨(チケット)の流れなどのゲーム利用統計を Google Analytics で収集します。個人を識別しないランダムな分析用識別子を使用し、プライバシー同意の後にのみ収集します。</li>
         </ul>
 
         <h3>1.3 端末内にのみ保存される情報(サーバー送信しない)</h3>
@@ -93,7 +94,7 @@
         <p>上記の情報は端末内のローカルストレージにのみ保存され、外部に送信されません。</p>
 
         <div class="highlight">
-            <strong>収集しない情報:</strong> 本アプリは利用統計分析(Analytics)やクラッシュ収集(Crashlytics)ツールを使用せず、位置情報・連絡先・写真など端末内の個人ファイルにアクセスしません。
+            <strong>収集しない情報:</strong> 本アプリはクラッシュ収集(Crashlytics)ツールを使用せず、位置情報・連絡先・写真など端末内の個人ファイルにアクセスしません。利用統計は個人を識別しない匿名の形式でのみ収集します。
         </div>
 
         <h2>2. アプリの権限</h2>
@@ -128,7 +129,8 @@
         <h3>4.1 Firebase (Google)</h3>
         <ul>
             <li><strong>Firebase Authentication:</strong> Google ログインによるユーザー認証</li>
-            <li><strong>Cloud Functions / Cloud Firestore:</strong> 決済検証および広告削除権限記録の保存</li>
+            <li><strong>Cloud Functions / Cloud Firestore:</strong> 決済検証、広告削除権限記録、クラウドセーブ(進行度)の保存</li>
+            <li><strong>Google Analytics:</strong> 匿名のゲーム利用統計分析(サービス改善用)</li>
         </ul>
         <p>Firebase プライバシーポリシー: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></p>
 
